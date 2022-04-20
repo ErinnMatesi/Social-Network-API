@@ -1,0 +1,27 @@
+{
+  "name": "social-network-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ErinnMatesi/Social-Network-API.git"
+  },
+  "author": "ErinnMatesi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ErinnMatesi/Social-Network-API/issues"
+  },
+  "homepage": "https://github.com/ErinnMatesi/Social-Network-API#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "moment": "^2.29.3",
+    "mongodb": "^4.5.0",
+    "mongoose": "^6.3.0",
+    "nodemon": "^2.0.15"
+  }
+}
