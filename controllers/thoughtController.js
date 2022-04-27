@@ -1,4 +1,5 @@
 const { User, Thought } = require('../models');
+const mongoose = require('mongoose');
 
 module.exports = {
 // getThoughts
@@ -28,7 +29,7 @@ module.exports = {
     Thought.create(req.body)
       .then((thought) => {
         return User.findOneAndUpdate(
-          { _id: req.params.userId },
+          { id: req.params.userId },
           { $addToSet: {thoughts: thought._id} },
           { new: true}
         );
@@ -111,7 +112,7 @@ module.exports = {
     )
       .then((thought) =>
         !thought
-          ? res.status(404).json({ message: 'No thought found with that id' })
+          ? res.status(404).json({ message: 'No reaction found with that id' })
           : res.json(thought)
       )
       .catch((err) => {
