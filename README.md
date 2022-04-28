@@ -11,6 +11,8 @@ Contains the backend setup for a social network using MongoDB/Mongoose
 
 ## Installation
 Clone the repo, install dependencies, run the server live and use Postman or Insomnia to interact.
+See video for a *[demonstration](https://drive.google.com/file/d/1OKsS9zu_hSNmyFBGXNmZNGjauzQYKjxv/view)*.
+![screenshot of webpage](./assets/postmanScreenshot.PNG)
 
 ## Technologies
 - MongoDB
